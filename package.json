@@ -1,0 +1,21 @@
+{
+  "name": "rest-api-food-ordering",
+  "version": "1.0.0",
+  "description": "grahpql rest api for react-food-ordering-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "andreicastrodev@github",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
