@@ -8,7 +8,7 @@ module.exports = buildSchema(
         _id: ID!
         title: String!
         description: String!
-        amount: String!
+        price: String!
     }
 
     type FoodData{
@@ -19,13 +19,13 @@ module.exports = buildSchema(
     input FoodInputData{
         title: String!
         description: String!
-        amount: String!
+        price: String!
     }
 
 
 
     type RootQuery{
-        foods: FoodData!
+        getFoods: FoodData!
     }
     
     

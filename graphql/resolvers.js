@@ -7,7 +7,7 @@ module.exports = {
         const food = new Foods({
             title: foodInput.title,
             description: foodInput.description,
-            amount: foodInput.amount
+            price: foodInput.price
         });
 
         const createdFood = await food.save();
@@ -16,6 +16,20 @@ module.exports = {
 
             ...createdFood._doc,
             _id: createdFood._id.toString()
+        }
+    },
+
+    getFoods: async function (args, ref) {
+
+        const foodItems = await Foods.find();
+        console.log(foodItems)
+        return {
+            foods: foodItems.map(el => {
+                return {
+                    ...el._doc,
+                    _id: el._id.toString(),
+                }
+            })
         }
     }
 }

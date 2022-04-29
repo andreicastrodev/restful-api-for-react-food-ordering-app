@@ -13,7 +13,7 @@ const foodScema = new Schema({
         type: String,
         required: true,
     },
-    amount: {
+    price: {
         type: String,
         required: true
     }
